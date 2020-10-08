@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: #EFEEEE;
+}
+
+nav>img {
+    width: 70px;
+}
+
+section {
+    position: relative;
+}
+
+.landing {
+    background-color: #9BD7D1;
+    width: 100%;
+    height: 90vh;
+}
+
+h1 {
+    font-size: 4rem;
+    width: 80%;
+    margin-left: 10%;
+}
+
+span {
+    font-size: 2rem;
+}
+
+.cpp {
+    background-color: #6FC6CD;
+    margin-top: -50px;
+    width: 100%;
+    height: 90vh;
+}
+
+.about {
+    background-color: #6FB6CD;
+    width: 100%;
+    height: 150vh;
+}
+
+button {
+    transition: 0.2s;
+    width: 350px;
+    height: 65px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: white 4px solid;
+    background-color: transparent;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+button:hover {
+    transform: translateY(-7px);
+}
+
+.buttons-landing {
+    width: 100%;
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+}
+
+a>img {
+    width: 50px;
+}
+
+a>img:hover {
+    animation: arrow-hover 0.5s;
+}
+
+.about-card {
+    width: 90%;
+    margin-left: 5%;
+    height: 250px;
+    text-align: left;
+    background-color: #6FA0CD;
+    border-radius: 15px;
+    position: relative;
+}
+
+.text-div {
+    width: 50%;
+    margin-left: 20px;
+}
+
+.about-card>img {
+    position: absolute;
+    right: 20px;
+    width: 220px;
+    top: 10px;
+    border-radius: 10px;
+}
+
+.about-card>.text-div>h1 {
+    font-size: 2.5rem;
+}
+
+.about-card>.text-div>span {
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 1040px) {
+    h1 {
+        font-size: 3rem;
+    }
+    button {
+        width: 70%;
+        margin-top: 20px;
+        font-size: 1.2rem;
+    }
+    .buttons-landing {
+        display: inline-block;
+    }
+}
+
+@keyframes arrow-hover {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(6px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.the180 {
+    transform: rotate(180deg);
+}
+
+.the180:hover {
+    animation: arrow-hover-reverse 0.5s;
+}
+
+@keyframes arrow-hover-reverse {
+    0% {
+        transform: translateY(0px) rotate(180deg);
+    }
+    50% {
+        transform: translateY(-6px) rotate(180deg);
+    }
+    100% {
+        transform: translateY(0px) rotate(180deg);
+    }
+}
